@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="{% static 'css/styles.css' %}">
+    <title>Notes List</title>
+</head>
+
+<header>
+    <h1>Notes App</h1>
+    <nav>
+        <button><a href="{% url 'notes_list' %}" style="text-decoration:none">Notes Index</a></button>
+        <button><a href="{% url 'notes_search' %}" style="text-decoration:none">Search Notes</a></button>
+    </nav>
+</header>
+
+<body>
+
+    
+    <div class='blockContent'>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>

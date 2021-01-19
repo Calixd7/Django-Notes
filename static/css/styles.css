@@ -1,0 +1,149 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pageTitle {
+    margin-top: 1rem;
+
+}
+
+nav button {
+    
+    width: 15%;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #a9db80, #96c56f);
+    background: -moz-linear-gradient(top, #a9db80, #96c56f);
+    background: -ms-linear-gradient(top, #a9db80, #96c56f);
+    background: -o-linear-gradient(top, #a9db80, #96c56f);
+    background: linear-gradient(to bottom, #a9db80, #96c56f);
+    border-radius: 8px;
+    border: 1px solid #444444;
+    box-shadow: 0px 1px 1px #888888 inset, 1px 1px 3px #222222;
+    color: #6d954e;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 32px 16px 32px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    font-family: arial;
+}
+
+nav button:hover {
+    background: rgba(120, 160, 120, 1);
+    color: white;
+
+}
+
+button a {
+    color: rgb(105, 82, 13);
+}
+
+h1 {
+    
+
+    padding: 1rem;
+    font-size: 2rem;
+    color: #1d3461ff;
+    text-shadow: 2.5px 2.5px 5px;
+}
+
+header {
+    background: #2f3e8f;
+    color: white;
+    font-size: 14px;
+    padding: 50px;
+}
+
+.notesList {
+    display: flex;
+    flex-flow: wrap;
+
+}
+
+.note {
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #f7f4eaff;
+    background-image: linear-gradient(rgb(84, 73, 94), rgb(197, 187, 154));
+    font-size: 1.5rem;
+   
+    box-shadow: 5px 10px 5px;
+}
+
+.note:hover {
+    background: rgba(120, 160, 120, 1);
+    color: rgb(172, 106, 106);
+}
+
+
+.noteTitle {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+
+.newNote {
+    width: 15%;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #a9db80, #96c56f);
+    background: -moz-linear-gradient(top, #a9db80, #96c56f);
+    background: -ms-linear-gradient(top, #a9db80, #96c56f);
+    background: -o-linear-gradient(top, #a9db80, #96c56f);
+    background: linear-gradient(to bottom, #a9db80, #96c56f);
+    border-radius: 8px;
+    border: 1px solid #444444;
+    box-shadow: 0px 1px 1px #888888 inset, 1px 1px 3px #222222;
+    color: #6d954e;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 32px 16px 32px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    font-family: arial;
+
+}
+
+.spacing {
+    width: 100%;
+    height: 150px;
+}
+
+.newNote:hover {
+
+    background-color: rgb(182, 189, 199);
+    box-shadow: 3px 7px 3px;
+
+}
+
+.detailsLinks a {
+    display: flex;
+    color: #f7f4eaff;
+}
+
+.detailsLinks button {
+    width: 15%;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #a9db80, #96c56f);
+    background: -moz-linear-gradient(top, #a9db80, #96c56f);
+    background: -ms-linear-gradient(top, #a9db80, #96c56f);
+    background: -o-linear-gradient(top, #a9db80, #96c56f);
+    background: linear-gradient(to bottom, #a9db80, #96c56f);
+    border-radius: 8px;
+    border: 1px solid #444444;
+    box-shadow: 0px 1px 1px #888888 inset, 1px 1px 3px #222222;
+    color: #6d954e;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 32px 16px 32px;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.4);
+    font-family: arial;
+}

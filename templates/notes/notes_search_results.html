@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class='pageTitle'>Search Results</h2>
+
+<div class='resultsList'>
+    {% for result in results %}
+    <p class='searchResult'><a href="{% url 'note_details' pk=result.pk %}">{{ result.title }}</a></p>
+    {% endfor %}
+</div>
+
+<button><a href="{% url 'notes_list' %}">Back to all Notes</a></button>
+
+{% endblock %}

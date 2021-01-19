@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<h1 class='pageTitle'>Notes!</h1>
+
+<div class='notesList'>
+
+    {% for note in notes %}
+    <div class='note'>
+        <h2 class='noteTitle'><a href="{% url 'note_details' pk=note.pk %}"
+                style="text-decoration:none">{{ note.title }}</a></h2>
+        <p class='noteBody'>{{ note.body|truncatewords:10 }}</p>
+    </div>
+    {% endfor %}
+</div>
+<div class='spacing'></div>
+
+<br>
+<div class='container'>
+    <button class='newNote'><a href="{% url 'notes_create' %}" style="text-decoration:none">Add a Note</a></button>
+</div>
+
+
+{% endblock %}

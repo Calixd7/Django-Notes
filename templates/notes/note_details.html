@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+<h2 class='pageTitle'>Note Details</h2>
+
+{% block content %}
+<div class='notesList'>
+    <div class='note'>
+        <h2 class='noteTitle'>{{ note.title }}</h2>
+        <p class='noteBody'>{{ note.body }}</p>
+    </div>
+    <div class='noteTiming'>
+        <p class='time'>{{ note.niceCreated }}</p>
+        <p class='time'>{{ note.niceUpdated }}</p>
+    </div>
+</div>
+
+<div class='detailsLinks'>
+    <button><a href="{% url  'notes_delete' pk=note.pk %}" style="text-decoration:none">Delete this note</a></button>
+    <button><a href="{% url  'notes_update' pk=note.pk %}" style="text-decoration:none">Edit this note</a></button>
+    <button><a href="{% url 'notes_list' %}" style="text-decoration:none">Back to the rest of your notes</a></button>
+</div>
+{% endblock %}
